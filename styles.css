@@ -1,0 +1,85 @@
+body{
+    background-color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 30%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 30px 70px;
+    margin: 100px auto 20px;
+    border-radius: 10px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container img{
+    width: 20%;
+    height: 30%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(221, 221, 221);
+    border-radius: 30px;
+}
+#input-box{
+    flex: 1;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+button{
+    border-radius: 30px;
+    background-color: brown;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.list-container{
+    position: relative;
+}
+.list-container li{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+}
+li::before{
+    content: " ";
+    height: 24px;
+    width: 24px;
+    background-image: url(https://icones.pro/wp-content/uploads/2021/04/icone-cercle-gris.png);
+    border-radius: 50%;
+    position: absolute;
+    background-size: cover;
+    left: 10px; 
+}
+li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+li.checked::before{
+    background-image: url(https://thumbs.dreamstime.com/b/green-check-mark-circle-vector-illustration-flat-design-isolated-green-check-mark-circle-flat-design-isolated-125098940.jpg);
+}
+ul li span{
+    position: absolute;
+    right: 15px;
+    bottom: 4px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: brown;
+    text-align: center;
+}
+ul li span:hover{
+    background-color: rgb(207, 139, 139);
+    border-radius: 50%;
+}
